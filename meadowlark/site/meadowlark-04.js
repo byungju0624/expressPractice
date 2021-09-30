@@ -3,7 +3,8 @@ const expressHandlebars = require("express-handlebars");
 const handlers = require("./lib/handler");
 const app = express();
 const port = 3001;
-
+import path from "path";
+const __dirname = path.resolve();
 app.engine(
   "handlebars",
   expressHandlebars({
